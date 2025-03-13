@@ -11,6 +11,9 @@
     "format": "prettier --write projects/kairo-ui",
     "format:check": "prettier --check projects/kairo-ui"
   },
+  "engines": {
+    "pnpm": "^10.6.2"
+  },
   "private": true,
   "dependencies": {
     "@angular/common": "^19.2.0",
@@ -41,5 +44,8 @@
     "prettier": "3.5.3",
     "typescript": "~5.7.2",
     "typescript-eslint": "8.26.0"
+  },
+  "volta": {
+    "node": "22.14.0"
   }
 }
