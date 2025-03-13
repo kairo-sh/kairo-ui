@@ -8,9 +8,8 @@ describe('KairoUiComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [KairoUiComponent]
-    })
-    .compileComponents();
+      imports: [KairoUiComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(KairoUiComponent);
     component = fixture.componentInstance;

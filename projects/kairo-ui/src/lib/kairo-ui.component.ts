@@ -1,15 +1,10 @@
-import { Component } from '@angular/core';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
 
 @Component({
-  selector: 'lib-kairo-ui',
+  selector: 'ku-kairo-ui',
   imports: [],
-  template: `
-    <p>
-      kairo-ui works!
-    </p>
-  `,
-  styles: ``
+  template: ` <p>kairo-ui works!</p> `,
+  styles: ``,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class KairoUiComponent {
-
-}
+export class KairoUiComponent {}
