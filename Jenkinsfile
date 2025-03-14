@@ -21,15 +21,19 @@ podTemplate(containers: [
           }
 
           stage('Build') {
+            sh 'cd angular/'
+
             sh 'npm install'
             sh 'npm run build'
+
+            sh 'cd ..'
           }
 
           if (env.GIT_TAG_NAME) {
             stage('Deploy ${NGUI} NPM package') {
               withCredentials([file(credentialsId: 'KAIROSH_NPMRC', variable: 'NPMRC')]) {
                 sh 'echo $NPMRC > .npmrc'
-                sh 'cd dist/${NGUI} && npm publish --access public'
+                sh 'cd angular/dist/${NGUI} && npm publish --access public'
               }
             }
           }
