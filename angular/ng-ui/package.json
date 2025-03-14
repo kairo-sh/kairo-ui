@@ -1,5 +1,5 @@
 {
-  "name": "@kairo-ng-ui/components",
+  "name": "@kairo-sh/ng-ui",
   "description": "A reusable UI component library built with Angular and TailwindCSS, designed for all kairo.sh applications.",
   "author": "Kairo.sh Team",
   "license": "MIT",

@@ -10,23 +10,23 @@
   },
   "newProjectRoot": "angular",
   "projects": {
-    "components": {
+    "ng-ui": {
       "projectType": "library",
-      "root": "angular/components",
-      "sourceRoot": "angular/components/src",
+      "root": "angular/ng-ui",
+      "sourceRoot": "angular/ng-ui/src",
       "prefix": "ku",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "angular/components/ng-package.json"
+            "project": "angular/ng-ui/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "angular/components/tsconfig.lib.prod.json"
+              "tsConfig": "angular/ng-ui/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "angular/components/tsconfig.lib.json"
+              "tsConfig": "angular/ng-ui/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -34,7 +34,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "angular/components/tsconfig.spec.json",
+            "tsConfig": "angular/ng-ui/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -45,10 +45,10 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "angular/components/**/*.ts",
-              "angular/components/**/*.html"
+              "angular/ng-ui/**/*.ts",
+              "angular/ng-ui/**/*.html"
             ],
-            "eslintConfig": "angular/components/eslint.config.js"
+            "eslintConfig": "angular/ng-ui/eslint.config.js"
           }
         }
       }

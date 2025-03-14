@@ -8,8 +8,8 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "paths": {
-      "components": [
-        "./dist/commponents"
+      "ng-ui": [
+        "./dist/ng-ui"
       ]
     },
     "noImplicitReturns": true,
