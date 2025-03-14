@@ -8,8 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "format": "prettier --write projects/kairo-ui",
-    "format:check": "prettier --check projects/kairo-ui"
+    "format": "prettier --write angular/components",
+    "format:check": "prettier --check angular/components"
   },
   "engines": {
     "pnpm": "^10.6.2"

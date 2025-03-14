@@ -8,8 +8,8 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "paths": {
-      "kairo-ui": [
-        "./dist/kairo-ui"
+      "components": [
+        "./dist/commponents"
       ]
     },
     "noImplicitReturns": true,

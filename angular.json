@@ -5,27 +5,28 @@
     "packageManager": "pnpm",
     "schematicCollections": [
       "angular-eslint"
-    ]
+    ],
+    "analytics": false
   },
-  "newProjectRoot": "projects",
+  "newProjectRoot": "angular",
   "projects": {
-    "kairo-ui": {
+    "components": {
       "projectType": "library",
-      "root": "projects/kairo-ui",
-      "sourceRoot": "projects/kairo-ui/src",
+      "root": "angular/components",
+      "sourceRoot": "angular/components/src",
       "prefix": "ku",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/kairo-ui/ng-package.json"
+            "project": "angular/components/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/kairo-ui/tsconfig.lib.prod.json"
+              "tsConfig": "angular/components/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/kairo-ui/tsconfig.lib.json"
+              "tsConfig": "angular/components/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -33,7 +34,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/kairo-ui/tsconfig.spec.json",
+            "tsConfig": "angular/components/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -44,10 +45,10 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/kairo-ui/**/*.ts",
-              "projects/kairo-ui/**/*.html"
+              "angular/components/**/*.ts",
+              "angular/components/**/*.html"
             ],
-            "eslintConfig": "projects/kairo-ui/eslint.config.js"
+            "eslintConfig": "angular/components/eslint.config.js"
           }
         }
       }
