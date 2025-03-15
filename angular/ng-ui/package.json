@@ -1,0 +1,19 @@
+{
+  "name": "@kairo-sh/ng-ui",
+  "description": "A reusable UI component library built with Angular and TailwindCSS, designed for all kairo.sh applications.",
+  "author": "Kairo.sh Team",
+  "license": "MIT",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kairo-sh/kairo-ui.git"
+  },
+  "peerDependencies": {
+    "@angular/common": "^19.2.0",
+    "@angular/core": "^19.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
