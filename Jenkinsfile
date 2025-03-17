@@ -31,10 +31,12 @@ podTemplate(containers: [
             sh 'cd angular/ && pnpm run build'
           }
 
-          stage('Deploy ${NGUI} NPM package') {
-            withCredentials([file(credentialsId: 'KAIROSH_NPMRC', variable: 'NPMRC')]) {
-              sh 'echo $NPMRC > .npmrc'
-              sh 'cd angular/dist/${NGUI} && npm publish --access public'
+          if (env.BRANCH_NAME == 'main') {
+            stage("Deploy ${NGUI} NPM package") {
+              withCredentials([file(credentialsId: 'KAIROSH_NPMRC', variable: 'NPMRC')]) {
+                sh 'echo $NPMRC > .npmrc'
+                sh "cd angular/dist/${NGUI} && npm publish --access public"
+              }
             }
           }
         }
