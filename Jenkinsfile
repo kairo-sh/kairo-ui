@@ -16,6 +16,11 @@ podTemplate(containers: [
 ]) {
     node(POD_LABEL) {
         container('node') {
+          if (env.BRANCH_NAME != 'main' && env.CHANGE_ID == null) {
+            echo 'Skipping build on non-main branch'
+            return
+          }
+
           stage('Checkout') {
             checkout scm
           }
@@ -26,12 +31,10 @@ podTemplate(containers: [
             sh 'cd angular/ && pnpm run build'
           }
 
-          if (env.GIT_TAG_NAME) {
-            stage('Deploy ${NGUI} NPM package') {
-              withCredentials([file(credentialsId: 'KAIROSH_NPMRC', variable: 'NPMRC')]) {
-                sh 'echo $NPMRC > .npmrc'
-                sh 'cd angular/dist/${NGUI} && npm publish --access public'
-              }
+          stage('Deploy ${NGUI} NPM package') {
+            withCredentials([file(credentialsId: 'KAIROSH_NPMRC', variable: 'NPMRC')]) {
+              sh 'echo $NPMRC > .npmrc'
+              sh 'cd angular/dist/${NGUI} && npm publish --access public'
             }
           }
         }
