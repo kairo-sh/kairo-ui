@@ -21,8 +21,9 @@ podTemplate(containers: [
           }
 
           stage('Build') {
-            sh 'cd angular/ && npm install'
-            sh 'cd angular/ && npm run build'
+            sh 'corepack enable'
+            sh 'cd angular/ && pnpm install'
+            sh 'cd angular/ && pnpm run build'
           }
 
           if (env.GIT_TAG_NAME) {
