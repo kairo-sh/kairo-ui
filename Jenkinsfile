@@ -22,7 +22,7 @@ podTemplate(containers: [
 
           stage('Build') {
             sh 'corepack enable'
-            sh 'cd angular/ && pnpm fetch --prod'
+            sh 'cd angular/ && pnpm install'
             sh 'cd angular/ && pnpm run build'
           }
 
