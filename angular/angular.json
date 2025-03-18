@@ -57,7 +57,8 @@
             "configDir": "./ng-ui/.storybook",
             "browserTarget": "ng-ui:build",
             "compodoc": false,
-            "port": 6006
+            "port": 6006,
+            "styles": ["./styles.css"]
           }
         },
         "build-storybook": {
@@ -66,7 +67,8 @@
             "configDir": "./ng-ui/.storybook",
             "browserTarget": "ng-ui:build",
             "compodoc": false,
-            "outputDir": "storybook-static"
+            "outputDir": "storybook-static",
+            "styles": ["./styles.css"]
           }
         }
       }
