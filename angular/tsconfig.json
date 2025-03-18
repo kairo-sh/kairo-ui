@@ -10,6 +10,7 @@
         "./dist/ng-ui"
       ]
     },
+    "types": ["node"],
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
