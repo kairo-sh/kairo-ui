@@ -15,8 +15,6 @@ import { KuIconDirective } from '../icon';
     NgComponentOutlet,
     BrnDialogCloseDirective,
     KuDialogCloseDirective,
-    NgIcon,
-    KuIconDirective,
     KuIconDirective,
   ],
   providers: [provideIcons({ lucideX })],
@@ -33,7 +31,7 @@ import { KuIconDirective } from '../icon';
 
     <button brnDialogClose hlm>
       <span class="sr-only">Close</span>
-      <ng-icon hlm size="sm" name="lucideX" />
+      <ku-icon hlm size="sm" name="lucideX" />
     </button>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,

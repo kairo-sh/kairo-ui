@@ -3,7 +3,7 @@ import { hlm, injectExposedSideProvider, injectExposesStateProvider } from '@spa
 import type { ClassValue } from 'clsx';
 
 @Directive({
-	selector: '[kuSelectContent], hlm-select-content',
+	selector: '[hlmSelectContent], hlm-select-content',
 	standalone: true,
 	host: {
 		'[class]': '_computedClass()',
@@ -11,7 +11,7 @@ import type { ClassValue } from 'clsx';
 		'[attr.data-side]': '_sideProvider?.side() ?? "bottom"',
 	},
 })
-export class KuSelectContentDirective {
+export class HlmSelectContentDirective {
 	public readonly userClass = input<ClassValue>('', { alias: 'class' });
 	public readonly stickyLabels = input<boolean>(false);
 	protected readonly _stateProvider = injectExposesStateProvider({ optional: true });

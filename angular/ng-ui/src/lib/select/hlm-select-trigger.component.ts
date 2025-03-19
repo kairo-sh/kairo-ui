@@ -5,8 +5,8 @@ import { hlm } from '@spartan-ng/brain/core';
 import { BrnSelectComponent, BrnSelectTriggerDirective } from '@spartan-ng/brain/select';
 import { type VariantProps, cva } from 'class-variance-authority';
 import type { ClassValue } from 'clsx';
-import { KuIconDirective } from '../icon';
-import { KuInputDirective } from '../input';
+import {KuIconDirective} from '../icon';
+import {KuInputDirective} from '../input';
 
 export const selectTriggerVariants = cva(
 	'flex items-center justify-between rounded-md border border-input bg-background text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
@@ -61,7 +61,7 @@ type SelectTriggerVariants = VariantProps<typeof selectTriggerVariants>;
     </button>
   `,
 })
-export class KuSelectTriggerComponent {
+export class HlmSelectTriggerComponent {
   protected readonly icon = contentChild(KuIconDirective);
 
   protected readonly brnSelect = inject(BrnSelectComponent, { optional: true });

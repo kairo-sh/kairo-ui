@@ -8,4 +8,4 @@ export * from './ku-button.directive';
 	imports: [KuButtonDirective],
 	exports: [KuButtonDirective],
 })
-export class HlmButtonModule {}
+export class KuButtonModule {}

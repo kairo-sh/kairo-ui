@@ -15,9 +15,6 @@
       "@spartan-ng/ui-formfield-helm": [
         ".\\ng-ui/src/lib/ui-formfield-helm/src/index.ts"
       ],
-      "@spartan-ng/ui-select-helm": [
-        ".\\ng-ui/src/lib/ui-select-helm/src/index.ts"
-      ],
       "@spartan-ng/ui-icon-helm": [
         ".\\ng-ui/src/lib/ui-icon-helm/src/index.ts"
       ],
@@ -41,6 +38,9 @@
       ],
       "@spartan-ng/ui-switch-helm": [
         ".\\ng-ui/src/lib/ui-switch-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-select-helm": [
+        ".\\ng-ui/src/lib/ui-select-helm/src/index.ts"
       ]
     },
     "types": [

@@ -19,7 +19,7 @@ export * from './ku-dialog-title.directive';
 export * from './ku-dialog.component';
 export * from './ku-dialog.service';
 
-export const HlmDialogImports = [
+export const KuDialogImports = [
 	KuDialogComponent,
 	KuDialogCloseDirective,
 	KuDialogContentComponent,
@@ -31,7 +31,7 @@ export const HlmDialogImports = [
 ] as const;
 
 @NgModule({
-	imports: [...HlmDialogImports],
-	exports: [...HlmDialogImports],
+	imports: [...KuDialogImports],
+	exports: [...KuDialogImports],
 })
-export class HlmDialogModule {}
+export class KuDialogModule {}

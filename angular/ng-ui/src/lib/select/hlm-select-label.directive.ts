@@ -2,18 +2,18 @@ import { Directive, computed, inject, input } from '@angular/core';
 import { hlm } from '@spartan-ng/brain/core';
 import { BrnSelectLabelDirective } from '@spartan-ng/brain/select';
 import type { ClassValue } from 'clsx';
-import { KuSelectContentDirective } from './ku-select-content.directive';
+import { HlmSelectContentDirective } from './hlm-select-content.directive';
 
 @Directive({
-	selector: '[kuSelectLabel], hlm-select-label',
+	selector: '[hlmSelectLabel], hlm-select-label',
 	hostDirectives: [BrnSelectLabelDirective],
 	standalone: true,
 	host: {
 		'[class]': '_computedClass()',
 	},
 })
-export class KuSelectLabelDirective {
-	private readonly _selectContent = inject(KuSelectContentDirective);
+export class HlmSelectLabelDirective {
+	private readonly _selectContent = inject(HlmSelectContentDirective);
 	private readonly _stickyLabels = computed(() => this._selectContent.stickyLabels());
 	public readonly userClass = input<ClassValue>('', { alias: 'class' });
 	protected _computedClass = computed(() =>

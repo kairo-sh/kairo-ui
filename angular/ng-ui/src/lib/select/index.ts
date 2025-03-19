@@ -1,34 +1,34 @@
 import { NgModule } from '@angular/core';
-import { KuSelectContentDirective } from './ku-select-content.directive';
-import { KuSelectGroupDirective } from './ku-select-group.directive';
-import { KuSelectLabelDirective } from './ku-select-label.directive';
-import { KuSelectOptionComponent } from './ku-select-option.component';
-import { KuSelectScrollDownComponent } from './ku-select-scroll-down.component';
-import { KuSelectScrollUpComponent } from './ku-select-scroll-up.component';
-import { KuSelectTriggerComponent } from './ku-select-trigger.component';
-import { KuSelectValueDirective } from './ku-select-value.directive';
-import { KuSelectDirective } from './ku-select.directive';
+import { HlmSelectContentDirective } from './hlm-select-content.directive';
+import { HlmSelectGroupDirective } from './hlm-select-group.directive';
+import { HlmSelectLabelDirective } from './hlm-select-label.directive';
+import { HlmSelectOptionComponent } from './hlm-select-option.component';
+import { HlmSelectScrollDownComponent } from './hlm-select-scroll-down.component';
+import { HlmSelectScrollUpComponent } from './hlm-select-scroll-up.component';
+import { HlmSelectTriggerComponent } from './hlm-select-trigger.component';
+import { HlmSelectValueDirective } from './hlm-select-value.directive';
+import { HlmSelectDirective } from './hlm-select.directive';
 
-export * from './ku-select-content.directive';
-export * from './ku-select-group.directive';
-export * from './ku-select-label.directive';
-export * from './ku-select-option.component';
-export * from './ku-select-scroll-down.component';
-export * from './ku-select-scroll-up.component';
-export * from './ku-select-trigger.component';
-export * from './ku-select-value.directive';
-export * from './ku-select.directive';
+export * from './hlm-select-content.directive';
+export * from './hlm-select-group.directive';
+export * from './hlm-select-label.directive';
+export * from './hlm-select-option.component';
+export * from './hlm-select-scroll-down.component';
+export * from './hlm-select-scroll-up.component';
+export * from './hlm-select-trigger.component';
+export * from './hlm-select-value.directive';
+export * from './hlm-select.directive';
 
 export const KuSelectImports = [
-	KuSelectContentDirective,
-	KuSelectTriggerComponent,
-	KuSelectOptionComponent,
-	KuSelectValueDirective,
-	KuSelectDirective,
-	KuSelectScrollUpComponent,
-	KuSelectScrollDownComponent,
-	KuSelectLabelDirective,
-	KuSelectGroupDirective,
+	HlmSelectContentDirective,
+	HlmSelectTriggerComponent,
+	HlmSelectOptionComponent,
+	HlmSelectValueDirective,
+	HlmSelectDirective,
+	HlmSelectScrollUpComponent,
+	HlmSelectScrollDownComponent,
+	HlmSelectLabelDirective,
+	HlmSelectGroupDirective,
 ] as const;
 
 @NgModule({

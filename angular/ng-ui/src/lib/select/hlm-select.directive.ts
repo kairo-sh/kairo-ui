@@ -1,17 +1,15 @@
 import { Directive, computed, input } from '@angular/core';
 import { hlm } from '@spartan-ng/brain/core';
-import { BrnSelectGroupDirective } from '@spartan-ng/brain/select';
 import type { ClassValue } from 'clsx';
 
 @Directive({
-	selector: '[kuSelectGroup], hlm-select-group',
-	hostDirectives: [BrnSelectGroupDirective],
+	selector: 'hlm-select, brn-select[hlm]',
 	standalone: true,
 	host: {
 		'[class]': '_computedClass()',
 	},
 })
-export class KuSelectGroupDirective {
+export class HlmSelectDirective {
 	public readonly userClass = input<ClassValue>('', { alias: 'class' });
-	protected readonly _computedClass = computed(() => hlm(this.userClass()));
+	protected readonly _computedClass = computed(() => hlm('space-y-2', this.userClass()));
 }
