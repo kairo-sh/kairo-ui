@@ -8,9 +8,17 @@
     "paths": {
       "ng-ui": [
         "./dist/ng-ui"
+      ],
+      "@spartan-ng/ui-input-helm": [
+        ".\\ng-ui/src/lib/ui-input-helm/src/index.ts"
+      ],
+      "@spartan-ng/ui-formfield-helm": [
+        ".\\ng-ui/src/lib/ui-formfield-helm/src/index.ts"
       ]
     },
-    "types": ["node"],
+    "types": [
+      "node"
+    ],
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
