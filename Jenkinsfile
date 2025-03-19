@@ -33,7 +33,7 @@ podTemplate(containers: [
 
           if (env.BRANCH_NAME == 'main') {
             stage("Deploy ${NGUI} NPM package") {
-              withCredentials([file(credentialsId: 'KAIROSH_NPM_TOKEN', variable: 'NPM_TOKEN')]) {
+              withCredentials([string(credentialsId: 'KAIROSH_NPM_TOKEN', variable: 'NPM_TOKEN')]) {
                 sh 'echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc'
                 sh "cd angular/dist/${NGUI} && npm publish --access public"
               }
