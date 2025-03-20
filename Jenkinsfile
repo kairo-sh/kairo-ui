@@ -31,6 +31,14 @@ podTemplate(containers: [
             sh 'cd angular/ && pnpm run build'
           }
 
+          stage('Lint') {
+            sh 'cd angular/ && pnpm run lint'
+          }
+
+          stage('Format') {
+            sh 'cd angular/ && pnpm run format:check'
+          }
+
           if (env.BRANCH_NAME == 'main') {
             stage("Deploy ${NGUI} NPM package") {
               withCredentials([file(credentialsId: 'KAIROSH_NPMRC', variable: 'NPMRC')]) {
