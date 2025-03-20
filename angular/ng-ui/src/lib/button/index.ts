@@ -5,7 +5,7 @@ export * from './ku-button.token';
 export * from './ku-button.directive';
 
 @NgModule({
-	imports: [KuButtonDirective],
-	exports: [KuButtonDirective],
+  imports: [KuButtonDirective],
+  exports: [KuButtonDirective],
 })
-export class HlmButtonModule {}
+export class KuButtonModule {}

@@ -6,9 +6,7 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "paths": {
-      "ng-ui": [
-        "./dist/ng-ui"
-      ]
+      "ng-ui": ["./dist/ng-ui"]
     },
     "types": ["node"],
     "noImplicitReturns": true,
