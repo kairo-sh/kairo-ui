@@ -1,19 +1,16 @@
 import type { StorybookConfig } from '@storybook/angular';
 
 const config: StorybookConfig = {
-  "stories": [
-    "../src/**/*.stories.ts",
-    "../src/**/story/*.stories.ts"
+  stories: ['../src/**/*.stories.ts', '../src/**/story/*.stories.ts'],
+  addons: [
+    '@storybook/addon-essentials',
+    '@storybook/addon-onboarding',
+    '@chromatic-com/storybook',
+    '@storybook/addon-interactions',
   ],
-  "addons": [
-    "@storybook/addon-essentials",
-    "@storybook/addon-onboarding",
-    "@chromatic-com/storybook",
-    "@storybook/addon-interactions"
-  ],
-  "framework": {
-    "name": "@storybook/angular",
-    "options": {}
-  }
+  framework: {
+    name: '@storybook/angular',
+    options: {},
+  },
 };
 export default config;

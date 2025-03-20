@@ -5,14 +5,13 @@ const meta: Meta<KuSpinnerComponent> = {
   title: 'Spinner',
   component: KuSpinnerComponent,
   tags: ['autodocs'],
-  render: (args) => ({
+  render: args => ({
     props: args,
-    template: `<ku-spinner />`
+    template: `<ku-spinner />`,
   }),
 };
 
 export default meta;
 type Story = StoryObj<KuSpinnerComponent>;
 
-export const Primary: Story = {
-}
+export const Primary: Story = {};

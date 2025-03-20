@@ -20,18 +20,18 @@ export * from './ku-dialog.component';
 export * from './ku-dialog.service';
 
 export const KuDialogImports = [
-	KuDialogComponent,
-	KuDialogCloseDirective,
-	KuDialogContentComponent,
-	KuDialogDescriptionDirective,
-	KuDialogFooterComponent,
-	KuDialogHeaderComponent,
-	KuDialogOverlayDirective,
-	KuDialogTitleDirective,
+  KuDialogComponent,
+  KuDialogCloseDirective,
+  KuDialogContentComponent,
+  KuDialogDescriptionDirective,
+  KuDialogFooterComponent,
+  KuDialogHeaderComponent,
+  KuDialogOverlayDirective,
+  KuDialogTitleDirective,
 ] as const;
 
 @NgModule({
-	imports: [...KuDialogImports],
-	exports: [...KuDialogImports],
+  imports: [...KuDialogImports],
+  exports: [...KuDialogImports],
 })
 export class KuDialogModule {}

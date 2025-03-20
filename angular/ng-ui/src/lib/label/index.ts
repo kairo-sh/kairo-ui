@@ -4,7 +4,7 @@ import { KuLabelDirective } from './ku-label.directive';
 export * from './ku-label.directive';
 
 @NgModule({
-	imports: [KuLabelDirective],
-	exports: [KuLabelDirective],
+  imports: [KuLabelDirective],
+  exports: [KuLabelDirective],
 })
 export class KuLabelModule {}

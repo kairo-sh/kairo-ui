@@ -20,19 +20,19 @@ export * from './hlm-select-value.directive';
 export * from './hlm-select.directive';
 
 export const KuSelectImports = [
-	HlmSelectContentDirective,
-	HlmSelectTriggerComponent,
-	HlmSelectOptionComponent,
-	HlmSelectValueDirective,
-	HlmSelectDirective,
-	HlmSelectScrollUpComponent,
-	HlmSelectScrollDownComponent,
-	HlmSelectLabelDirective,
-	HlmSelectGroupDirective,
+  HlmSelectContentDirective,
+  HlmSelectTriggerComponent,
+  HlmSelectOptionComponent,
+  HlmSelectValueDirective,
+  HlmSelectDirective,
+  HlmSelectScrollUpComponent,
+  HlmSelectScrollDownComponent,
+  HlmSelectLabelDirective,
+  HlmSelectGroupDirective,
 ] as const;
 
 @NgModule({
-	imports: [...KuSelectImports],
-	exports: [...KuSelectImports],
+  imports: [...KuSelectImports],
+  exports: [...KuSelectImports],
 })
 export class KuSelectModule {}

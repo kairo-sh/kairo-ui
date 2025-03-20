@@ -3,7 +3,10 @@ import { KuLabelDirective } from '../label';
 import { KuSheetComponent } from './ku-sheet.component';
 import { KuSheetContentComponent } from './ku-sheet-content.component';
 import { KuSheetHeaderComponent } from './ku-sheet-header.component';
-import { BrnSheetContentDirective, BrnSheetTriggerDirective } from '@spartan-ng/brain/sheet';
+import {
+  BrnSheetContentDirective,
+  BrnSheetTriggerDirective,
+} from '@spartan-ng/brain/sheet';
 import { KuSheetFooterComponent } from './ku-sheet-footer.component';
 import { KuSheetTitleDirective } from './ku-sheet-title.directive';
 import { KuSheetDescriptionDirective } from './ku-sheet-description.directive';
@@ -19,7 +22,8 @@ const meta: Meta<KuSheetComponent> = {
   tags: ['autodocs'],
   decorators: [
     moduleMetadata({
-      imports: [BrnSheetTriggerDirective,
+      imports: [
+        BrnSheetTriggerDirective,
         BrnSheetContentDirective,
         KuSheetComponent,
         KuSheetContentComponent,
@@ -30,11 +34,12 @@ const meta: Meta<KuSheetComponent> = {
         KuButtonDirective,
         KuInputDirective,
         KuIconDirective,
-        KuLabelDirective],
+        KuLabelDirective,
+      ],
       providers: [provideIcons({ lucideX })],
     }),
-],
-  render: (args) => ({
+  ],
+  render: args => ({
     props: args,
     template: `
     <ku-sheet side="right">
@@ -59,12 +64,11 @@ const meta: Meta<KuSheetComponent> = {
         </ku-sheet-footer>
       </ku-sheet-content>
     </ku-sheet>
-    `
+    `,
   }),
 };
 
 export default meta;
 type Story = StoryObj<KuSheetComponent>;
 
-export const Primary: Story = {
-}
+export const Primary: Story = {};

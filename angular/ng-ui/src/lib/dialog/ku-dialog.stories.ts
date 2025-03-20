@@ -1,10 +1,13 @@
 import { Meta, moduleMetadata, type StoryObj } from '@storybook/angular';
 import { KuDialogComponent } from './ku-dialog.component';
-import { KuInputDirective, KuInputModule } from '../input';
+import { KuInputDirective } from '../input';
 import { KuDialogModule } from './index';
 import { KuLabelDirective } from '../label';
 import { KuButtonDirective } from '../button';
-import { BrnDialogContentDirective, BrnDialogTriggerDirective } from '@spartan-ng/brain/dialog';
+import {
+  BrnDialogContentDirective,
+  BrnDialogTriggerDirective,
+} from '@spartan-ng/brain/dialog';
 
 const meta: Meta<KuDialogComponent> = {
   title: 'Dialog',
@@ -12,11 +15,17 @@ const meta: Meta<KuDialogComponent> = {
   tags: ['autodocs'],
   decorators: [
     moduleMetadata({
-      imports: [KuDialogModule, KuLabelDirective, KuInputDirective, KuButtonDirective, BrnDialogTriggerDirective,
-        BrnDialogContentDirective]
-    })
+      imports: [
+        KuDialogModule,
+        KuLabelDirective,
+        KuInputDirective,
+        KuButtonDirective,
+        BrnDialogTriggerDirective,
+        BrnDialogContentDirective,
+      ],
+    }),
   ],
-  render: (args) => ({
+  render: args => ({
     props: args,
     template: `<ku-dialog>
       <button id="edit-profile" brnDialogTrigger kuBtn>Edit Profile</button>
@@ -39,12 +48,11 @@ const meta: Meta<KuDialogComponent> = {
           <button kuBtn type="submit">Save changes</button>
         </ku-dialog-footer>
       </ku-dialog-content>
-    </ku-dialog>`
+    </ku-dialog>`,
   }),
 };
 
 export default meta;
 type Story = StoryObj<KuDialogComponent>;
 
-export const Primary: Story = {
-}
+export const Primary: Story = {};

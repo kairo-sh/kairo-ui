@@ -1,9 +1,20 @@
 import { NgComponentOutlet } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation, computed, inject, input } from '@angular/core';
-import { NgIcon, provideIcons } from '@ng-icons/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ViewEncapsulation,
+  computed,
+  inject,
+  input,
+} from '@angular/core';
+import { provideIcons } from '@ng-icons/core';
 import { lucideX } from '@ng-icons/lucide';
 import { hlm } from '@spartan-ng/brain/core';
-import { BrnDialogCloseDirective, BrnDialogRef, injectBrnDialogContext } from '@spartan-ng/brain/dialog';
+import {
+  BrnDialogCloseDirective,
+  BrnDialogRef,
+  injectBrnDialogContext,
+} from '@spartan-ng/brain/dialog';
 import type { ClassValue } from 'clsx';
 import { KuDialogCloseDirective } from './ku-dialog-close.directive';
 import { KuIconDirective } from '../icon';

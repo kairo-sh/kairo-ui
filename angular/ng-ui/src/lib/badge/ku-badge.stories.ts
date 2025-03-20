@@ -1,18 +1,17 @@
-import {Meta, type StoryObj} from '@storybook/angular';
+import { Meta, type StoryObj } from '@storybook/angular';
 import { KuBadgeDirective } from './ku-badge.directive';
 
 const meta: Meta<KuBadgeDirective> = {
   title: 'Badge',
   component: KuBadgeDirective,
   tags: ['autodocs'],
-  render: (args) => ({
+  render: args => ({
     props: args,
-    template: `<a target="_blank" href="https://github.com/goetzrobin/spartan" kuBadge>This is madness. This is spartan.</a>`
+    template: `<a target="_blank" href="https://github.com/goetzrobin/spartan" kuBadge>This is madness. This is spartan.</a>`,
   }),
 };
 
 export default meta;
 type Story = StoryObj<KuBadgeDirective>;
 
-export const Primary: Story = {
-}
+export const Primary: Story = {};

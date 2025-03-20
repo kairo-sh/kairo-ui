@@ -8,22 +8,21 @@ const meta: Meta<KuSwitchComponent> = {
   tags: ['autodocs'],
   decorators: [
     moduleMetadata({
-      imports: [KuLabelDirective]
-    })
+      imports: [KuLabelDirective],
+    }),
   ],
-  render: (args) => ({
+  render: args => ({
     props: args,
     template: `
         <label class="flex items-center" kuLabel>
             <ku-switch class="mr-2" />
             Airplane mode
         </label>
-    `
+    `,
   }),
 };
 
 export default meta;
 type Story = StoryObj<KuSwitchComponent>;
 
-export const Primary: Story = {
-}
+export const Primary: Story = {};

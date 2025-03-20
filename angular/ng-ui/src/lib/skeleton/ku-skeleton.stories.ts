@@ -5,7 +5,7 @@ const meta: Meta<KuSkeletonComponent> = {
   title: 'Skeleton',
   component: KuSkeletonComponent,
   tags: ['autodocs'],
-  render: (args) => ({
+  render: args => ({
     props: args,
     template: `
     <div class='flex items-center p-4 m-4 w-fit space-x-4'>
@@ -14,12 +14,11 @@ const meta: Meta<KuSkeletonComponent> = {
         <ku-skeleton class='h-4 w-[250px]' />
         <ku-skeleton class='h-4 w-[200px]' />
       </div>
-    </div>`
+    </div>`,
   }),
 };
 
 export default meta;
 type Story = StoryObj<KuSkeletonComponent>;
 
-export const Primary: Story = {
-}
+export const Primary: Story = {};

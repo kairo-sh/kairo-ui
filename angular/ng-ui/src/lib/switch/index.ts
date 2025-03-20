@@ -6,9 +6,12 @@ import { KuSwitchComponent } from './ku-switch.component';
 export * from './ku-switch-thumb.directive';
 export * from './ku-switch.component';
 
-export const HlmSwitchImports = [KuSwitchComponent, KuSwitchThumbDirective] as const;
+export const HlmSwitchImports = [
+  KuSwitchComponent,
+  KuSwitchThumbDirective,
+] as const;
 @NgModule({
-	imports: [...HlmSwitchImports],
-	exports: [...HlmSwitchImports],
+  imports: [...HlmSwitchImports],
+  exports: [...HlmSwitchImports],
 })
 export class HlmSwitchModule {}

@@ -19,18 +19,18 @@ export * from './ku-sheet-title.directive';
 export * from './ku-sheet.component';
 
 export const KuSheetImports = [
-	KuSheetComponent,
-	KuSheetCloseDirective,
-	KuSheetContentComponent,
-	KuSheetDescriptionDirective,
-	KuSheetFooterComponent,
-	KuSheetHeaderComponent,
-	KuSheetOverlayDirective,
-	KuSheetTitleDirective,
+  KuSheetComponent,
+  KuSheetCloseDirective,
+  KuSheetContentComponent,
+  KuSheetDescriptionDirective,
+  KuSheetFooterComponent,
+  KuSheetHeaderComponent,
+  KuSheetOverlayDirective,
+  KuSheetTitleDirective,
 ] as const;
 
 @NgModule({
-	imports: [...KuSheetImports],
-	exports: [...KuSheetImports],
+  imports: [...KuSheetImports],
+  exports: [...KuSheetImports],
 })
 export class KuSheetModule {}

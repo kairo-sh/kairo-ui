@@ -1,6 +1,6 @@
 import { Meta, moduleMetadata, type StoryObj } from '@storybook/angular';
 import { KuLabelDirective } from './ku-label.directive';
-import { KuInputDirective} from '../input';
+import { KuInputDirective } from '../input';
 
 const meta: Meta<KuLabelDirective> = {
   title: 'Label',
@@ -8,20 +8,19 @@ const meta: Meta<KuLabelDirective> = {
   tags: ['autodocs'],
   decorators: [
     moduleMetadata({
-      imports: [KuInputDirective]
-    })
+      imports: [KuInputDirective],
+    }),
   ],
-  render: (args) => ({
+  render: args => ({
     props: args,
     template: `
     <label kuLabel>E-Mail
       <input class='w-80' kuInput type='email' placeholder='Email'/>
-    </label>`
+    </label>`,
   }),
 };
 
 export default meta;
 type Story = StoryObj<KuLabelDirective>;
 
-export const Primary: Story = {
-}
+export const Primary: Story = {};

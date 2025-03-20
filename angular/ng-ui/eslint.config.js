@@ -7,22 +7,7 @@ module.exports = tseslint.config(
   {
     files: ['**/*.ts'],
     rules: {
-      '@angular-eslint/directive-selector': [
-        'error',
-        {
-          type: 'attribute',
-          prefix: 'ku',
-          style: 'camelCase',
-        },
-      ],
-      '@angular-eslint/component-selector': [
-        'error',
-        {
-          type: 'element',
-          prefix: 'ku',
-          style: 'kebab-case',
-        },
-      ],
+      '@angular-eslint/no-input-rename': ['off'],
     },
   },
   {

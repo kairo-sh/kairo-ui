@@ -6,7 +6,7 @@ export * from './ku-input-error.directive';
 export * from './ku-input.directive';
 
 @NgModule({
-	imports: [KuInputDirective, KuInputErrorDirective],
-	exports: [KuInputDirective, KuInputErrorDirective],
+  imports: [KuInputDirective, KuInputErrorDirective],
+  exports: [KuInputDirective, KuInputErrorDirective],
 })
 export class KuInputModule {}

@@ -4,14 +4,16 @@ import { BrnSheetTitleDirective } from '@spartan-ng/brain/sheet';
 import type { ClassValue } from 'clsx';
 
 @Directive({
-	selector: '[kuSheetTitle]',
-	standalone: true,
-	host: {
-		'[class]': '_computedClass()',
-	},
-	hostDirectives: [BrnSheetTitleDirective],
+  selector: '[kuSheetTitle]',
+  standalone: true,
+  host: {
+    '[class]': '_computedClass()',
+  },
+  hostDirectives: [BrnSheetTitleDirective],
 })
 export class KuSheetTitleDirective {
-	public readonly userClass = input<ClassValue>('', { alias: 'class' });
-	protected _computedClass = computed(() => hlm('text-lg font-semibold', this.userClass()));
+  public readonly userClass = input<ClassValue>('', { alias: 'class' });
+  protected _computedClass = computed(() =>
+    hlm('text-lg font-semibold', this.userClass())
+  );
 }

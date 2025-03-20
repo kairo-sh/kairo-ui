@@ -6,46 +6,9 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "paths": {
-      "ng-ui": [
-        "./dist/ng-ui"
-      ],
-      "@spartan-ng/ui-input-helm": [
-        ".\\ng-ui/src/lib/ui-input-helm/src/index.ts"
-      ],
-      "@spartan-ng/ui-formfield-helm": [
-        ".\\ng-ui/src/lib/ui-formfield-helm/src/index.ts"
-      ],
-      "@spartan-ng/ui-icon-helm": [
-        ".\\ng-ui/src/lib/ui-icon-helm/src/index.ts"
-      ],
-      "@spartan-ng/ui-spinner-helm": [
-        ".\\ng-ui/src/lib/ui-spinner-helm/src/index.ts"
-      ],
-      "@spartan-ng/ui-skeleton-helm": [
-        ".\\ng-ui/src/lib/ui-skeleton-helm/src/index.ts"
-      ],
-      "@spartan-ng/ui-dialog-helm": [
-        ".\\ng-ui/src/lib/ui-dialog-helm/src/index.ts"
-      ],
-      "@spartan-ng/ui-label-helm": [
-        ".\\ng-ui/src/lib/ui-label-helm/src/index.ts"
-      ],
-      "@spartan-ng/ui-sheet-helm": [
-        ".\\ng-ui/src/lib/ui-sheet-helm/src/index.ts"
-      ],
-      "@spartan-ng/ui-badge-helm": [
-        ".\\ng-ui/src/lib/ui-badge-helm/src/index.ts"
-      ],
-      "@spartan-ng/ui-switch-helm": [
-        ".\\ng-ui/src/lib/ui-switch-helm/src/index.ts"
-      ],
-      "@spartan-ng/ui-select-helm": [
-        ".\\ng-ui/src/lib/ui-select-helm/src/index.ts"
-      ]
+      "ng-ui": ["./dist/ng-ui"]
     },
-    "types": [
-      "node"
-    ],
+    "types": ["node"],
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
