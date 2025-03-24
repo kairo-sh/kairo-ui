@@ -3,5 +3,6 @@
   "dest": "../dist/ng-ui",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "assets": ["./styles/**/*.css", "./tailwind.config.js", "./.postcssrc.json"]
 }

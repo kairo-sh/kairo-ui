@@ -50,6 +50,26 @@
             ],
             "eslintConfig": "./ng-ui/eslint.config.js"
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "./ng-ui/.storybook",
+            "browserTarget": "ng-ui:build",
+            "compodoc": false,
+            "port": 6006,
+            "styles": ["./ng-ui/styles/main.css"]
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "./ng-ui/.storybook",
+            "browserTarget": "ng-ui:build",
+            "compodoc": false,
+            "outputDir": "storybook-static",
+            "styles": ["./ng-ui/styles/main.css"]
+          }
         }
       }
     }
