@@ -7,6 +7,7 @@ k8sNode(['node']) {
     def ngui = new NodeProject(this, 'pnpm', 'angular')
 
     stage('PNPM - Install') {
+      ngui.initCorepack()
       ngui.install()
     }
 
