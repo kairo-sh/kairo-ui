@@ -15,5 +15,13 @@
     "@angular/common": "^19.2.0",
     "@angular/core": "^19.2.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "exports": {
+    "./tailwind.config": {
+      "default": "./tailwind.config.js"
+    },
+    "./styles/main": {
+      "default": "./styles/main.css"
+    }
+  }
 }
