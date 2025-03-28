@@ -17,10 +17,6 @@
   },
   "sideEffects": false,
   "exports": {
-    ".": {
-      "import": "./index.js",
-      "require": "./index.js"
-    },
     "./tailwind.config": {
       "default": "./tailwind.config.js"
     },
