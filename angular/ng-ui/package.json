@@ -9,7 +9,10 @@
     "url": "https://github.com/kairo-sh/kairo-ui.git"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "@ng-icons/core": "^29.10.0",
+    "@ng-icons/lucide": ">=29.0.0",
+    "@spartan-ng/brain": "0.0.1-alpha.422",
+    "tslib": "^2.8.1"
   },
   "peerDependencies": {
     "@angular/common": "^19.2.0",
